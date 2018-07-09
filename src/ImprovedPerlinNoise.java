@@ -14,10 +14,10 @@ public final class ImprovedPerlinNoise {
 
                 int frequency = 12;
                 // INCREASING FREQUENCY INCREASES GRANULARITY OF NOISE
-                double noise = noise(dx * frequency, dy * frequency, 4);
+                //double noise = noise(dx * frequency, dy * frequency, 4);
 
                 // ADDING TIME TO INPUT VALUES CREATES VARIOUS MOTION EFFECTS
-                //double noise = noise(dx * frequency, dy * frequency, time);
+                double noise = noise(dx * frequency, dy * frequency, time);
                 //double noise = noise(dx * time, dy *time, time);
                 //double noise = noise(dx * frequency + time, dy * frequency + time, time);
                 noise = (noise - 1) / 2;
