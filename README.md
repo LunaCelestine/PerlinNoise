@@ -1,1 +1,1 @@
-# PerlinNoise
+# ImprovedPerlinNoise
