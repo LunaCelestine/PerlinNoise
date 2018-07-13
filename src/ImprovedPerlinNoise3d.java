@@ -1,6 +1,6 @@
 import java.awt.image.BufferedImage;
 
-public final class ImprovedPerlinNoise {
+public final class ImprovedPerlinNoise3d {
     private static double time = 0;
     private static BufferedImage image = new BufferedImage(MainWindow.WIDTH, MainWindow.HEIGHT, BufferedImage.TYPE_INT_RGB);
     public static BufferedImage getNoiseImage(){
@@ -13,10 +13,10 @@ public final class ImprovedPerlinNoise {
                 //double noise = noise(dx, dy, 4);
 
                 int frequency = 12;
-                // INCREASING FREQUENCY INCREASES GRANULARITY OF NOISE
+                // Increasing frequency increase granularity of noise
                 //double noise = noise(dx * frequency, dy * frequency, 4);
 
-                // ADDING TIME TO INPUT VALUES CREATES VARIOUS MOTION EFFECTS
+                // Adding time to input values creates various motion effects
                 double noise = noise(dx * frequency, dy * frequency, time);
                 //double noise = noise(dx * time, dy *time, time);
                 //double noise = noise(dx * frequency + time, dy * frequency + time, time);

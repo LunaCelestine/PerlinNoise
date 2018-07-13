@@ -10,7 +10,7 @@ public class MainPanel extends JPanel {
     }
     protected void paintComponent(Graphics g){
         super.paintComponent(g);
-        g.drawImage(ImprovedPerlinNoise.getNoiseImage(), 0, 0, this);
+        g.drawImage(PerlinNoise2d.getNoiseImage(), 0, 0, this);
     }
 
 
