@@ -11,7 +11,41 @@ This program will populate a JFrame with noise; here is an example of what it lo
 
 ![Noise Image](PerlinNoise.jpg?raw=true "Perlin Noise")
 
-As you can see here the noise gradient, that is the change from black to white, is smooth and mimics naturally occuring
+As you can see here the noise gradient, that is the change from black to white, is smooth and mimics naturally occurring
 effects such as the topography of natural terrain. 
 
+Below is a explanation of how the algorithm works.
 
+Perlin Noise
+
+- Is an algorithm for generating pseudorandom noise
+- The noise at each point has a relationship to its neighboring points in n-dimensions
+- The algorithm generatss "smooth" noise and has applications in procedural content generation for game development
+
+The Algorithm
+
+1. Define a grid
+
+- Each small square represents a pixel
+- The goal is to color each pixel create smooth noise
+- The grid overlay represents the location and direction of pseudorandom gradient vectors
+
+image
+
+\* The larger grid squares are the gradient vector grid, changing its dimensions can increase or decrease the frequency of the noise.
+
+2. Calculate the dot product of the random gradient and distance vector
+
+- Determine the random gradient
+
+image
+
+- Random gradients are selected from a list of vectors
+
+image
+
+- Determine the distance vectors
+
+image
+
+- Calculate dot product
