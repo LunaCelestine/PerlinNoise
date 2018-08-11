@@ -30,7 +30,7 @@ The Algorithm
 - The goal is to color each pixel create smooth noise
 - The grid overlay represents the location and direction of pseudorandom gradient vectors
 
-image
+![Noise Image](DefiningGrid.png?raw=true "Defiune a grid")
 
 \* The larger grid squares are the gradient vector grid, changing its dimensions can increase or decrease the frequency of the noise.
 
@@ -38,11 +38,11 @@ image
 
 - Determine the random gradient
 
-image
+![Noise Image](DetermineGradients.png?raw=true "Determine Random Gradients")
 
 - Random gradients are selected from a list of vectors
 
-image
+![Noise Image](ListofGradients.png?raw=true "Gradient List")
 
 - Determine the distance vectors
 
