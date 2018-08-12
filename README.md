@@ -42,13 +42,39 @@ The Algorithm
 
 - Random gradients are selected from a list of vectors
 
+
+In the diagram below, I've chosen the vectors (-1, 1), (1, 1), (1, -1), and (-1, -1)
+
 ![Noise Image](ListofGradients.png?raw=true "Gradient List")
 
 - Determine the distance vectors
 
+Distance vectors are simply a line pointing from the corner of the grid square to the pixel as shown below.
 
 ![Noise Image](DetermineDistanceVectors.png?raw=true "Determine the Distance Vectors")
 
 - Calculate dot product
 
-![Noise Image](CalculateDotProducts.png?raw=true "Calculate the Dot Products")
+![Noise Image](DotProducts.png?raw=true "Calculate the Dot Products")
+
+3. Fade Function and Bilinear Interpolation
+
+In order to prevent any artifacts in the resulting image or terrain, we must first
+ apply a fade function to the relative location of the pixel in the grid square. For example, the relative location of the center
+ of the grid square would be (0.5, 0.5), hereinafter denoted by FracX and FracY respectively. The fade functions,
+ also known as an ease curve has the following form:
+ 
+  ![FadeFunction](fadefunction1.png?raw=true "FadeFunction")
+ 
+ We input FracX and FracY to this function and use the resulting values in the next step, 
+ where we use bilinear interpolation to get the final pixel value.
+ 
+ 
+  ![FadeFunction](BilinearInterpolation.png?raw=true "FadeFunction")
+  
+  
+This gives us the final pixel value. In a simple application this value can denote the brightness of a pixel.
+When used in procedural terrain generation, this value can denote the height of the terrain at a given point.
+ 
+ 
+ 
