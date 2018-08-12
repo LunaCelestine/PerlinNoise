@@ -46,6 +46,7 @@ The Algorithm
 
 - Determine the distance vectors
 
+
 ![Noise Image](DetermineDistanceVectors.png?raw=true "Determine the Distance Vectors")
 
 - Calculate dot product
