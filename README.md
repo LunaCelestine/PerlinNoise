@@ -1,5 +1,5 @@
 # PerlinNoise2d 
-The goal of this project is to create visualization of the Perlin Noise algorithm, a type of gradient noise. 
+The goal of this project is to create a visualization of the Perlin Noise algorithm, a type of gradient noise. 
 The algorithm was originally created by Dr. Ken Perlin of NYU in 1983. The original algorithm suffered from second order interpolation discontinuity and unoptimal gradient
 computation. However, later in 2003, he developed an improved version of the algorithm which runs faster and appears more natural.
 This project uses this improved algorithm to create a visualization of the noise, displayed inside of a JFrame.
@@ -20,7 +20,7 @@ Perlin Noise
 
 - Is an algorithm for generating pseudorandom noise
 - The noise at each point has a relationship to its neighboring points in n-dimensions
-- The algorithm generatss "smooth" noise and has applications in procedural content generation for game development
+- The algorithm generates "smooth" noise and has applications in procedural content generation for game development
 
 The Algorithm
 
@@ -50,3 +50,5 @@ The Algorithm
 ![Noise Image](DetermineDistanceVectors.png?raw=true "Determine the Distance Vectors")
 
 - Calculate dot product
+
+![Noise Image](CalculateDotProducts.png?raw=true "Calculate the Dot Products")
